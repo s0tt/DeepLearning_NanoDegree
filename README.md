@@ -43,7 +43,7 @@ Added a linear layer with 133 outputs as final classifier.
 Without further data augmentation this resulted in a accuracy of 67% on the test set.
 
 Some classification results of the final app:
-![CNN results](demo/CNN_classification.png)
+![CNN results](demo/CNN_classification_demo.png)
 
 ### Style transfer with VGG
 During the chapter I implemented a CNN which uses style transfer to blend 2 different images into one.
@@ -65,8 +65,8 @@ RNN(
   (fc): Linear(in_features=250, out_features=21384, bias=True)
 )
 ```
-
 Some newly invented tv scripts by the RNN can be found in the corresponding sub-folder.
+
 --- 
 ## Generative adverserial network (GAN): Face generation
 Project to implement a GAN with generator and discriminator for face generation based on the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
