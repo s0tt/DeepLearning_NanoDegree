@@ -1,6 +1,6 @@
 # DeepLearning_NanoDegree
-Proejcts for deep learning nano degree from Udacity
-
+Project overview for deep learning nano degree from Udacity.
+For further details please feel free to have a look into the project folders.
 
 --- 
 ## Fully connected networks: Bike sharing predictor
@@ -43,7 +43,7 @@ Added a linear layer with 133 outputs as final classifier.
 Without further data augmentation this resulted in a accuracy of 67% on the test set.
 
 Some classification results of the final app:
-![CNN results](demo\CNN_classification.png)
+![CNN results](demo/CNN_classification.png)
 
 ### Style transfer with VGG
 During the chapter I implemented a CNN which uses style transfer to blend 2 different images into one.
