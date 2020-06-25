@@ -1,6 +1,7 @@
 # DeepLearning_NanoDegree
-Proejcts for deep learning nano degree from Udacity
-
+Project overview for the deep learning nanodegree from Udacity.
+This page is just a brief overview over some selected results.
+For further details please feel free to have a look into the project folders.
 
 --- 
 ## Fully connected networks: Bike sharing predictor
@@ -8,17 +9,17 @@ Project to implement a fully conncted net without external frameworks like Pytor
 This includes both forward and backwards pass of the network.
 
 Architecture visualized:
-![Arch][demo\FC_arch.png]
+![Arch](demo/FC_arch.png)
 
 With this architecture the following results were archived on the bike sharing dataset:
-![FC Results][demo\FC_train_predict_combined.png]
+![FC Results](demo/FC_train_predict_combined.png)
 
 --- 
 ## Convolutional neural networks
 
 ### Dog breed classifier: Custom network architecture
-Project task to design a custom CNN for the dog breed classification and achieve a accuracy greater than 10%.
-My approach features 4 convolutional layers with 3x3 kernels and max pooling with stride 2 after each convolution.
+The project task was to design a custom CNN for dog breed classification and achieve a accuracy greater than 10%.
+My approach features 4 convolutional layers with 3x3 kernels and max-pooling with stride 2 after each convolution.
 The final classifier vector contains 133 values for the 133 dog breed classes.
 The final accuracy was 12%.
 
@@ -34,23 +35,23 @@ Net(
 )
 ```
 Architecture visualized:
-![Arch][demo\CNN_dog_breed.png]
+![Arch](demo/CNN_dog_breed.png)
 
 ### Dog breed classifier: Transfer learning
-The second task was creating the classifier via transfer learning.
+The second task was to create the same dog breed classifier via transfer learning.
 As reference model I choose [ResNet-50](https://arxiv.org/pdf/1512.03385.pdf)
 Added a linear layer with 133 outputs as final classifier.
 Without further data augmentation this resulted in a accuracy of 67% on the test set.
 
 Some classification results of the final app:
-![CNN results][demo\CNN_classification.png]
+![CNN results](demo/CNN_classification_demo.png)
 
 ### Style transfer with VGG
 During the chapter I implemented a CNN which uses style transfer to blend 2 different images into one.
 The network learns to only extract the style from on of the pictures and to keep to content in the other one.
-Here is a result on a photo from myself in Las Vegas with the style of the artist Hundertwasser:
+Here is the result of a photo I took myself back in 2017 mixed with the style of the artist Hundertwasser:
 
-![StyleTransfer][demo\style_transfer.png]
+![StyleTransfer](demo/style_transfer.png)
 
 --- 
 ## Reccurent neural network: TV script generation
@@ -65,24 +66,25 @@ RNN(
   (fc): Linear(in_features=250, out_features=21384, bias=True)
 )
 ```
-
 Some newly invented tv scripts by the RNN can be found in the corresponding sub-folder.
+
 --- 
 ## Generative adverserial network (GAN): Face generation
 Project to implement a GAN with generator and discriminator for face generation based on the [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset.
 Training process after 35 epochs:
 
-![GAN training][demo\GAN_training.png]
+![GAN training](demo/GAN_training.png)
 
 Here are some faces the network generated:
-![GAN result][demo\GAN_result.png]
+![GAN result](demo/GAN_result.png)
+
 --- 
 
 ## AWS Sagemaker deployment: IMDB sentiment analysis
-Project to deploy a sentiment analysis model by using AWS Sagemaker and REST api.
+Project to deploy a sentiment analysis model by using AWS Sagemaker and a REST API.
 The result was a deployed ML endpoint integrated into a intuitive website by using Lambda functions and the AWS API gateway.
 
 
-![Sagemaker website][demo\Intent_website.png]
+![Sagemaker website](demo/Intent_website.png)
 
 --- 
